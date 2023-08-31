@@ -1,0 +1,170 @@
+/* General site settings Starting */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+
+html,
+body,
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+i,
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* General site settings End */
+
+
+/* Root Starting */
+:root {
+    /* Colors */
+    --color-primary: #006eee;
+    --color-secondary: #10405c;
+    --color-dark: #191919;
+    --color-text-light: #fcfcfc;
+    --color-text-dark: #afafaf;
+    --color-text-hover: #ededed;
+    --color-btn-hover: #b88675;
+    /* Font weights */
+    --font-weight-normal: 300;
+    --font-weight-bold: 600;
+    --font-weight-black: 800;
+    /* Font families */
+    --font-family-title: 'Playfair Display', sans-serif;
+    --font-family-titletag: 'Josefin Sans', sans-serif;
+    --font-family-p: 'Lexend', sans-serif;
+}
+
+/* Roots End */
+
+
+/* Font Setup Starting */
+html {
+    font-size: 10px;
+    font-family: var(--font-family-p);
+    font-weight: var(--font-weight-normal);
+}
+
+body {
+    font-family: var(--font-family-p);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-light);
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    background-color: var(--color-dark);
+}
+
+.titletag {
+    font-family: var(--font-family-titletag);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+    font-size: 9.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+}
+
+h2 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+    font-size: 5rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h4 {
+    font-family: var(--font-family-p);
+    font-weight: var(--font-weight-bold);
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+p {
+    font-family: var(--font-family-p);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-light);
+    font-size: 2.1rem;
+    line-height: 1.7;
+}
+/* Font Setup End */
+
+
+/* Scrollbar Starting */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-btn-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    -webkit-border-radius: 50px;
+    -webkit-box-shadow: 0 2px 5px var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
+/* Scrollbar End */

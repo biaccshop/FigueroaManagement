@@ -1,0 +1,23 @@
+.errorpage {
+    width: 100%;
+    height: 100vh;
+}
+
+.errorpage-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.errorpage-content h1 {
+    font-family: var(--font-family-title);
+    margin-bottom: 3rem;
+}
+
+.errorpage-content p {
+    margin-bottom: 3rem;
+}

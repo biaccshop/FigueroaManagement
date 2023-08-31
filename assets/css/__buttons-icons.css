@@ -1,0 +1,76 @@
+/* Button */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 237.5px;
+    height: 71px;
+    padding: 24.20px 55.75px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    text-transform: uppercase;
+    font-family: var(--font-family-p);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-light);
+    font-size: 1.8rem;
+}
+
+/* Apply Now button */
+.btn-applynow {
+    background-color: var(--color-primary);
+}
+
+.btn-applynow:hover {
+    background-color: var(--color-secondary);
+}
+
+
+.btn-applynow2 {
+    background-color: var(--color-secondary);
+}
+
+.btn-applynow2:hover {
+    background-color: var(--color-btn-hover);
+}
+
+
+/* Errorpage button */
+.btn-errorpage {
+    background-color: var(--color-primary);
+    width: 25rem;
+    padding: 24.20px 20.75px;
+}
+
+.btn-errorpage:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn-errorpage:hover,
+.btn-errorpage:hover .rightarrow-icon {
+    color: var(--color-text-dark);
+}
+
+
+/* Icons */
+.rightarrow-icon {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    transition: 0.2s ease-in;
+}
+
+/*  576px - 833px - Tablet Sections */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    .btn {
+        width: auto;
+    }
+}
+
+/*  575px and Lower - Mobile Sections */
+@media screen and (max-width: 575px) {
+    .btn {
+        width: auto;
+    }
+}
